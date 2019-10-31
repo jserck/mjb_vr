@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <title>720Vr</title>
+    <link rel="stylesheet"
+          href="./css/common.css">
+    <style>
+        .m-vr {
+            padding-bottom: 3.10292%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .g-go{
+            width: 100%;
+            height: 0;
+            padding-bottom: 3.10292%;
+            padding-left: 3.78417%;
+            position: fixed;
+            bottom: 0;
+            z-index: 999;
+            background: rgb(94, 100, 110);
+        }
+        .g-go-back {
+            width: 8.1054%;
+        }
+        @media (max-width: 3000px) {
+            .g-go-back {
+                bottom: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <div class="g-go">
+            <span class="g-go-back"
+                  onclick="javascript:history.back(-1);">
+                <img src="./img/back.png"
+                     alt="">
+            </span>
+        </div>
+
+        <div class="m-vr">
+            <iframe src=""
+                    name="vr"
+                    id="vr"
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    scrolling="no"></iframe>
+        </div>
+    </article>
+    <script>
+        window.onload = function () {
+            let src = window.location.search.replace(/\?ifr=/, '');
+            document.getElementById("vr").src = src;
+            console.log(src);
+        }
+    </script>
+</body>
+
+</html>

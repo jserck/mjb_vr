@@ -1,0 +1,46 @@
+.g-nav {
+    width: 100%;
+}
+
+.g-nav {
+    position: relative;
+    /* padding: 3.662109% 0 5.10253% 0; */
+    padding: 3.41796% 0;
+}
+
+.g-nav .g-biaoti-img {
+    width: 35%;
+}
+
+.g-nav .g-list-biaoti-img {
+    width: 41.8457%;
+}
+
+.g-nav ::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 4%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 11.18027%;
+    height: 23.4252%;
+    background: url('../img/pic_logo.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.g-go-back {
+    position: fixed;
+    left: 3.78417%;
+    bottom: 50px;
+    width: 8.1054%;
+    z-index: 999;
+}
+
+@media (max-width: 3000px) {
+    .g-go-back {
+        bottom: 25px;
+    }
+}

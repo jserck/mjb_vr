@@ -1,0 +1,160 @@
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+.m-body {
+    width: 100%;
+    height: 100%;
+    background: url('../img/pic_di.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+    background: rgba(255, 255, 255, 0);
+}
+
+.m-body .g-body-container {
+    margin: auto;
+    max-width: 4096px;
+    width: 100%;
+    height: 100%;
+}
+
+.g-main-container {
+    max-height: 71.8518%;
+    height: 100%;
+}
+
+#g-carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.g-carousel-inner {
+    margin: auto;
+    max-width: 83.789%;
+    width: 100%;
+    height: 100%;
+}
+
+.g-carousel-item {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+.g-carousel-item-container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.marTopLi {
+    margin-top: 2.43383%;
+}
+
+.g-carousel-item-li {
+    max-width: 1088px;
+    width: 31.70163%;
+    height: 27.4002%;
+    overflow: hidden;
+    background-position: center!important;
+    position: relative;
+    /* flex-grow: 2; */
+}
+
+.mar-l {
+    margin-left: 2.43457%;
+}
+
+.g-prev {
+    position: absolute;
+    left: 2.7%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 3.7841%;
+}
+
+.g-prev span,
+.g-next span {
+    font-size: 0;
+    background: none;
+}
+
+.g-next {
+    position: absolute;
+    right: 2.7%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 3.7841%;
+}
+
+.carousel-indicators .active {
+    background: #5D646E;
+    color: #fff;
+}
+
+.carousel-indicators li {
+    background: #fff;
+    color: #8B949E;
+}
+
+.g-carousel-indicators {
+    bottom: -5.9536%;
+}
+
+.carousel-indicators li {
+    margin: 0 35px;
+    width: 78px;
+    height: 76px;
+    line-height: 76px;
+    border-radius: 20px;
+    text-indent: 0;
+}
+
+.carousel-indicators li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    letter-spacing: 2.0;
+    font-size: 50px;
+}
+
+@media (max-width: 3000px) {
+    .carousel-indicators li {
+        margin: 0 35px;
+        width: 48px;
+        height: 46px;
+        line-height: 46px;
+        border-radius: 10px;
+        text-indent: 0;
+    }
+
+    .carousel-indicators li span {
+        font-size: 30px;
+    }
+}
+
+.add-time {
+    position: absolute;
+    width: 100%;
+    height: 171px;
+    line-height: 171px;
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    font-family: 'PingFangSC-Light';
+    bottom: 0px;
+    left: 0px;
+    background: url(../img/pic_zhezhao.png)no-repeat;
+    background-size: cover;
+}

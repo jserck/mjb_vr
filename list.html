@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/bootcss.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/list.css">
+</head>
+
+<body>
+    <div id="app">
+        <article class="m-body">
+            <span class="g-go-back" onclick="javascript:history.back(-1);">
+                <img src="./img/back.png" alt="">
+            </span>
+            <section class="g-body-container">
+                <section class="g-nav-container container-fluid">
+                    <!-- <div class="jumbotron"> -->
+                    <div class="g-nav">
+                        <div class="g-list-biaoti-img m-auto">
+                            <img src="./img/pic_fubiaoti.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </section>
+                <section class="g-main-container">
+                    <div id="g-carousel" class="carousel slide carousel-fade">
+                        <!-- 指示符 -->
+                        <ul class="g-carousel-indicators carousel-indicators">
+                            <li data-target="#g-carousel" :data-slide-to="index" v-for="(item,index) in subList" :class="index==0?'active':'sb'">
+                                <span>{{index+1}}</span>
+                            </li>
+                        </ul>
+                        <!-- 轮播图片 -->
+                        <div class="g-carousel-inner carousel-inner carousel-fade">
+                            <div :class="['g-carousel-item','carousel-item',index==0?'active':'sb']" v-for="(item,index) in subList">
+                                <ul class="
+                                    g-carousel-item-container
+                                    d-flex
+                                    flex-wrap
+                                    justify-content-start
+                                    align-content-start">
+                                    <li @click="linkList(item.webUrl)" :class="['g-carousel-item-li',
+                                        /[1|4|7]/.test(index+1)?'':'mar-l',
+                                        /[1|2|3]/.test(index+1)?'':'marTopLi',
+                                        ]" :style="`background:url(${item.backPicUrl});background-size:cover;`" v-for="(item,index) in item">
+                                        <div class="add-time add-t">{{item.title}}</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 左右切换按钮 -->
+                        <a class="g-prev carousel-control-prev" href="#g-carousel" data-slide="prev">
+                            <img src="./img/icon_zuo.png" alt="">
+                        </a>
+                        <a class="g-next carousel-control-next" href="#g-carousel" data-slide="next">
+                            <img src="./img/icon_you.png" alt="">
+                        </a>
+                    </div>
+                </section>
+            </section>
+        </article>
+    </div>
+    <script src="./vender/touch.js"></script>
+    <script src="./vender/vue.js"></script>
+    <script src="./vender/jquery.js"></script>
+    <script src="./vender/poper.js"></script>
+    <script src="./vender/bootstrap.js"></script>
+    <script src="./vender/cypto.js"></script>
+    <script src="./vender/des.js"></script>
+    <script src="./vender/list.js"></script>
+</body>
+
+</html>
